@@ -17,6 +17,7 @@ const registerUser = asyncHandler( async (req, res) => {
     // check for user creation
     // return response
 
+
     const {fullName, email, username, password } = req.body
     console.log("email : ", email);
 
@@ -73,6 +74,7 @@ const registerUser = asyncHandler( async (req, res) => {
     return res.status(201).json(
         new ApiResponse(200, createdUser, "User Registered Successfully")
     )
+
 })
 
 
